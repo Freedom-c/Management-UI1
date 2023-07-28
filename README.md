@@ -36,8 +36,6 @@ Additionally, there are "Filter" icons on the column headers, but the filtering 
 
 3. The form can be reset after adding a user by clicking the "Save User" button. The user input fields will be cleared for the next entry.
 
-4. The table can be sorted by clicking on the column headers (ID, User Name, Email, Enabled). Clicking on a column header multiple times will toggle between ascending and descending order.
-
 ## How To Run the Application
 
 1. Save the provided HTML, CSS, and JavaScript code in separate files with the following names:
@@ -59,8 +57,4 @@ Additionally, there are "Filter" icons on the column headers, but the filtering 
 
 - The filtering functionality on the table is not implemented in the current version. It can be added in the future for better user experience.
 
-Feel free to enhance the application further and add any missing features according to your needs.
-
-For any issues or inquiries, please feel free to contact the application developer.
-
-This README provides an overview of the User Management web application, explaining its UI components, functionalities, and usage instructions. It assumes you have a basic understanding of web development and how to run a simple web application. If you have any specific questions or need further assistance, don't hesitate to reach out to me.
+This README provides an overview of the User Management web application, explaining its UI components, functionalities, and usage instructions. If you have any specific questions or need further assistance, don't hesitate to reach out to me.
