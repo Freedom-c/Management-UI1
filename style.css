@@ -80,6 +80,10 @@ thead td{
   padding-left: 20px;
 }
 
+.table-ui td{
+  color:#fbfeff;
+}
+
 #user-roles{
   margin-bottom: 20px;
 }
