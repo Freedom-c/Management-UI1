@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
     <div class="container">
-     <div class="form-ui">
-    <h3 class="head">New User</h3>
-     <form action="/form-gonder" method="post" id="veriForm">
+        <div class="form-ui">
+            <h3 class="head">New User</h3>
+            <form action="/form-gonder" method="post" id="veriForm">
 
-    <button class="add" id="add", type="submit">Save User</button>
+                <button class="add" id="add" , type="submit">Save User</button>
 
-    <div class="username">
-        <label for="name">Username:</label>
-        <input type="text" id="username" name="username" required>
+                <div class="username">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="display-name">
+                    <label for="display">Display Name:</label>
+                    <input type="text" id="display" name="display-name" required>
+                </div>
+
+                <div class="phone">
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="users">
+                    <label for="user-roles">User Roles:</label>
+                    <input type="text" name="user" id="user-roles" placeholder="Select user roles.." list="User-Roles"
+                        autocomplete="off">
+                    <datalist id="User-Roles">
+                        <option>Guest</option>
+                        <option>Admin</option>
+                        <option>Superadmin</option>
+                    </datalist>
+                </div>
+                <div class="en">
+                    <label for="enabled">Enabled:</label>
+                    <input type="checkbox" name="enabled" id="enabled">
+                </div>
+            </form>
+        </div>
+
+        <div class="table-ui">
+            <table>
+                <thead>
+                    <tr>
+                        <td>ID<i class="fa-solid fa-sort"></i> <i class="fa-solid fa-filter"></i> </td>
+                        <td>User Name <i class="fa-solid fa-sort"> <i class="fa-solid fa-filter"></i> </i></td>
+                        <td>Email <i class="fa-solid fa-sort"></i> <i class="fa-solid fa-filter"></i> </td>
+                        <td>Enabled <i class="fa-solid fa-sort"></i> <i class="fa-solid fa-filter"></i> </td>
+                    </tr>
+                </thead>
+                <tbody id="user-table">
+                    <!--user logins-->
+                </tbody>
+            </table>
+        </div>
     </div>
-
-    <div class="display-name">
-        <label for="display-name">Display Name:</label>
-        <input type="text" id="display" name="display-name" required>
-    </div>
-
-    <div class="phone">
-        <label for="phone">Phone:</label>
-        <input type="number" id="phone" name="phone" required>
-    </div>
-
-    <div class="email">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="users">
-        <label for="user-roles">User Roles:</label>
-       <input type="text" name="user" id="user-roles" placeholder="Select user roles.." list="User-Roles" autocomplete="off">
-            <datalist id="User-Roles">
-                <option>Guest</option>
-                <option>Admin</option>
-                <option>Superadmin</option>
-            </datalist>
-    </div>
-    <div class="en">
-         <label for="enabled">Enabled:</label>
-         <input type="checkbox" name="enabled" id="enabled">
-    </div>
-    </form>
-</div>
-
-<div class="table-ui">
-    <table>
-        <thead>
-        <tr>
-            <td>ID<i class="fa-solid fa-sort"></i> <i class="fa-solid fa-filter"></i> </td>
-            <td>User Name <i class="fa-solid fa-sort"> <i class="fa-solid fa-filter"></i> </i></td>
-            <td>Email <i class="fa-solid fa-sort"></i> <i class="fa-solid fa-filter"></i> </td>
-            <td>Enabled <i class="fa-solid fa-sort"></i> <i class="fa-solid fa-filter"></i> </td>
-        </tr>
-    </thead>
-    <tbody id="user-table">
-        <!--user logins-->
-    </tbody>
-    </table>
-</div>
-</div>
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
